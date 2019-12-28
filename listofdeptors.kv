@@ -1,6 +1,3 @@
-<FlatButton@ButtonBehavior+Label>:
-    font_size: 16
-
 <SigninWindow>:
     id: main_win
     orientation: "vertical"
@@ -25,10 +22,7 @@
         Label:
             text: "Access Control"
             bold: True
-            size_hint_x: .9
-        FlatButton:
-            text: "x"
-            size_hint_x: .1
+            size_hint_x: 1
     BoxLayout:
         orientation: 'vertical'
         padding: main_win.space_x, 10
@@ -51,6 +45,7 @@
                 focus: True
                 password: False
                 on_text_validate: pwd_field.focus = True
+                font_size: 16
 
             TextInput:
                 id: pwd_field
@@ -58,6 +53,7 @@
                 multiline: False
                 password: True
                 on_text_validate: root.validate_user()
+                font_size: 16
         Label:
             id: sp
             size_hint_y: None

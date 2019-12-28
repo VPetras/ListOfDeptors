@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = List of Deptors
 
 # (str) Package name
-package.name = myapp
+package.name = listofdeptors
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -85,7 +85,7 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (int) Target Android API, should be as high as possible.
 #android.api = 27
